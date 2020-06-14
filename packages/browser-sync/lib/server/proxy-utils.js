@@ -54,7 +54,7 @@ module.exports.rewriteLinks = function(userServer) {
              * allow http https
              * @type {string}
              */
-            var pre = "//";
+            var pre = userServer.protocol + "//";
 
             if (match[0] === "'" || match[0] === '"') {
                 match = match.slice(1);
